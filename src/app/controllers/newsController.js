@@ -1,9 +1,9 @@
 
 class NewsController{
+    
     index(req,res){
-        resres.render('news')
+       res.render('news')      
     }
 }
 
-// đưa file ra ngoài // require(NewsController)
 module.exports = new NewsController;
