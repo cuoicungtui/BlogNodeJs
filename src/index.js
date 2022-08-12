@@ -4,8 +4,12 @@ const morgan = require('morgan')
 const exphbs  = require('express-handlebars')
 const app = express()
 const port = 3000
-
 const route = require('./routes/index.js')
+const db = require('./config/db/index')
+
+// connect db
+
+db.conect();
 
 app.use(express.static(path.join(__dirname, 'public')))
 
